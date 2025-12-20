@@ -100,8 +100,8 @@ hometop:
      推荐: /tags/推荐/ || fas fa-thumbs-up || linear-gradient(to right,#358bff,#15c6ff)
   recommendList:
     enable: true
-    sup: 置顶
-    title: 瓦力俱乐部
+    sup: 瓦力俱乐部
+    title: 推荐
     url: https://wallebuilders.club/
     img: https://bu.dusays.com/2025/11/03/6908401186fa9.jpg
     color: "none"
