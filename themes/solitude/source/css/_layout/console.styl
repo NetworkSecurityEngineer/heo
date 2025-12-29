@@ -26,15 +26,37 @@
       &:hover
         color var(--efu-main)
 
+  .console_content
+    display flex
+    position fixed
+    flex-direction column
+    max-height 800px
+    max-width 1400px
+    left 50%
+    width 100dvw
+    align-items center
+    justify-content center
+    padding-top 30px
+    gap 16px
+    transform translateX(-50%)
+    pointer-events none
+
+  &.show
+    .console_content>*
+        pointer-events: auto
+
   .console-card-group
     display flex
     justify-content center
     align-items center
     transform translateY(20px)
     transition .3s
+    opacity 0
+    max-width 1400px
     gap .5rem
     max-height calc(100dvh - 180px)
     max-width calc(100% - 64px)
+    height 800px
 
     +maxWidth1300()
       justify-content center
@@ -112,13 +134,19 @@
     font-size .6rem
     margin-bottom .5rem
 
+  .author-contents-item-title
+    width: 100%;
+    display: flex;
+    align-items: center
+
   .author-content-item-title
-    font-size 36px
+    font-size 28px
     font-weight 700
     line-height 1
     display flex
-    align-items center
-    justify-content space-between
+
+  .recent-comment-more
+    margin-left: auto
 
   .aside-list
     display flex
@@ -127,11 +155,19 @@
     justify-content space-between
     margin-top 1.5rem
 
+  &.show
+    .button-group
+      transform translateY(0)
+      opacity 1
+      transition-delay .2s
+
   .button-group
     display flex
-    margin 1rem auto 0 auto
     justify-content center
     width fit-content
+    transform translateY(20px)
+    transition .3s
+    opacity 0
 
     .console-btn-item
       width 80px
