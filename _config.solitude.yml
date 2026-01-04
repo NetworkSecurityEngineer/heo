@@ -543,8 +543,8 @@ footer:
        凌霞软件: https://www.lxware.cn/
        洪绘科技: https://honghui.zhheo.com/
      服务:
-       监控系统: https://twikoo.hallobo.xin/
-       评论系统: https://status.hallobo.xin/
+       监控系统: https://status.hallobo.xin/
+       评论系统: https://twikoo.hallobo.xin/
        统计系统: https://umami.hallobo.xin/
      支持:
        阿里集团: https://ali-home.alibaba.com/
@@ -568,7 +568,9 @@ footer:
 
   # 页脚信息文字
   links:
-     - name: 反馈
+     - name: 订阅
+       url: /rss/
+     - name: 反馈与举报
        url: https://wj.qq.com/s2/24191719/764b/
      - name: License
        url: https://github.com/everfu/hexo-theme-solitude/blob/main/LICENSE

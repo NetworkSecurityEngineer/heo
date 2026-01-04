@@ -80,6 +80,9 @@ div#footer-bar
                                 if item.icon 
                                     img.beian-icon(src=url_for(item.icon), alt=item.name)
                                 span.beian-name= item.name
+                    a.footer-bar-link.allsite_ok#allsite_status(href='https://status.hallobo.xin/' target='_blank' rel='noopener external nofollow noreferrer' title='最新更新时间: 2026/1/4 14:35:35' heotip='查看我的项目状态' data-tooltip-initialized)
+                        .status-light
+                        span 所有业务正常
         if theme.footer.links
             div.footer-bar-right
                 each item in theme.footer.links

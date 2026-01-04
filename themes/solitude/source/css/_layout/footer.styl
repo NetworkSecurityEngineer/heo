@@ -47,6 +47,44 @@
         padding: 0 0.5rem
         text-align: center
 
+  .allsite_ok 
+    .status-light
+      background var(--efu-green-op-deep)
+      display flex
+      align-items center
+      justify-content center
+
+  .allsite_ok 
+    .status-light::after
+      content ''
+      width 8px
+      height 8px
+      border-radius 50%
+      background var(--efu-green)
+
+  .status-light
+    width 14px
+    height 14px
+    border-radius 50%
+    background var(--efu-gray-op-deep)
+    display flex
+    align-items center
+    justify-content center
+
+  .status-light::after
+    content '+'
+    width 8px
+    height 8px
+    border-radius 50%
+    background var(--efu-gray)
+
+  .beian-group 
+    .footer-bar-link span
+      transition .3s
+
+  #allsite_status.allsite_ok:hover span
+    color: var(--efu-green)
+
   #footer_deal
     justify-content center
     display flex
